@@ -426,6 +426,78 @@ def build_recalls(rng, raw_lots, finished, consumption, shipments, deliveries, e
     return cases, actions, truth
 
 
+# ---- labelled edge cases (injected AFTER clean data, each one is recorded in ground truth) ----
+def inject_edge_cases(rng, raw_lots, finished, consumption, shipments,
+                      deliveries, recall_actions, truth):
+    n_each = max(2, int(len(finished) * 0.0025))
+
+    fin_by_wo = {}
+    for f in finished:
+        fin_by_wo.setdefault(f["work_order_id"], []).append(f)
+    raw_status = {l["raw_lot_id"]: l["status"] for l in raw_lots}
+    ship_by_id = {s["shipment_id"]: s for s in shipments}
+    delivery_by_id = {d["delivery_id"]: d for d in deliveries}
+    deliv_by_fin = {}
+    for d in deliveries:
+        fid = ship_by_id[d["shipment_id"]]["finished_lot_id"]
+        deliv_by_fin.setdefault(fid, []).append(d)
+
+    # 1) Finished lot references a missing input lot.
+    safe = [c for c in consumption
+            if raw_status[c["raw_lot_id"]] != "RECALLED"
+            and all(f["status"] != "RECALLED" for f in fin_by_wo[c["work_order_id"]])]
+    for i, c in enumerate(rng.sample(safe, n_each), start=1):
+        original = c["raw_lot_id"]
+        missing = f"RAWLOT-S999-2026-{900000 + i:06d}"
+        c["raw_lot_id"] = missing
+        truth.append({
+            "record_id": c["consumption_id"],
+            "table_name": "production_consumption",
+            "issue_type": "MISSING_INPUT_LOT",
+            "expected_decision": f"Flag finished lots of {c['work_order_id']}: input lot {missing} does not exist (original {original})",
+        })
+
+    # 2) Delivered quantity exceeds produced quantity.
+    shipped_ok = [f for f in finished if f["status"] == "SHIPPED"]
+    for f in rng.sample(shipped_ok, n_each):
+        d = rng.choice(deliv_by_fin[f["finished_lot_id"]])
+        extra = max(5, int(f["produced_qty"] * 0.1))
+        d["delivered_qty"] += extra
+        truth.append({
+            "record_id": f["finished_lot_id"],
+            "table_name": "deliveries",
+            "issue_type": "DELIVERED_EXCEEDS_PRODUCED",
+            "expected_decision": f"Total delivered exceeds produced_qty {f['produced_qty']} (delivery {d['delivery_id']} inflated by {extra})",
+        })
+
+    # 3) Recalled inventory remains available for sale.
+    blocked = sorted({a["delivery_id"] for a in recall_actions if a["action_type"] == "QUARANTINE"})
+    for did in rng.sample(blocked, min(n_each, len(blocked))):
+        delivery_by_id[did]["sale_status"] = "AVAILABLE_FOR_SALE"
+        truth.append({
+            "record_id": did,
+            "table_name": "deliveries",
+            "issue_type": "RECALLED_STILL_AVAILABLE",
+            "expected_decision": "Block this recalled stock: sale_status must be BLOCKED",
+        })
+
+    # 4) Recall misses a downstream customer (its recall actions are removed).
+    recover_of = {}
+    for a in recall_actions:
+        if a["action_type"] == "RECOVER":
+            recover_of[a["delivery_id"]] = a["recall_id"]
+    missed = rng.sample(sorted(recover_of), min(n_each, len(recover_of)))
+    for did in missed:
+        truth.append({
+            "record_id": did,
+            "table_name": "recall_actions",
+            "issue_type": "RECALL_MISSED_CUSTOMER",
+            "expected_decision": f"Delivery {did} is downstream of {recover_of[did]} but has no recall action; notify customer {delivery_by_id[did]['customer_id']}",
+        })
+    missed_set = set(missed)
+    recall_actions[:] = [a for a in recall_actions if a["delivery_id"] not in missed_set]
+
+
 # ---- MAIN ----
 def main():
     ap = argparse.ArgumentParser()
@@ -449,6 +521,8 @@ def main():
         rng, finished, customers, n["deliveries"], events)
     recall_cases, recall_actions, truth = build_recalls(
         rng, raw_lots, finished, consumption, shipments, deliveries, events)
+    inject_edge_cases(rng, raw_lots, finished, consumption, shipments,
+                      deliveries, recall_actions, truth)
 
     tables = [
         ("suppliers", suppliers), ("products", products), ("bom", boms),

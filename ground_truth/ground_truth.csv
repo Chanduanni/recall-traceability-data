@@ -5,3 +5,11 @@ RAWLOT-S048-2026-000400,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downs
 RAWLOT-S025-2026-000424,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 12 downstream deliveries under REC-2026-000004
 RAWLOT-S041-2026-000587,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 14 downstream deliveries under REC-2026-000005
 FINLOT-2026-000583,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000006
+CON000270,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000095: input lot RAWLOT-S999-2026-900001 does not exist (original RAWLOT-S049-2026-000052)
+CON000954,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000339: input lot RAWLOT-S999-2026-900002 does not exist (original RAWLOT-S032-2026-000539)
+FINLOT-2026-000266,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 161 (delivery DEL-2026-000680 inflated by 16)
+FINLOT-2026-000658,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 260 (delivery DEL-2026-001654 inflated by 26)
+DEL-2026-000328,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-001070,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-000331,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-000331 is downstream of REC-2026-000004 but has no recall action; notify customer C0097
+DEL-2026-001588,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-001588 is downstream of REC-2026-000005 but has no recall action; notify customer C0006
