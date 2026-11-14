@@ -1,4 +1,3 @@
-# recall-traceability-data
 
 # Recall Traceability: Synthetic Data Generator
 
