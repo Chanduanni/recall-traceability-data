@@ -1,15 +1,147 @@
 record_id,table_name,issue_type,expected_decision
-RAWLOT-S027-2026-000273,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000001
-RAWLOT-S028-2026-000463,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000002
-RAWLOT-S048-2026-000400,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000003
-RAWLOT-S025-2026-000424,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 12 downstream deliveries under REC-2026-000004
-RAWLOT-S041-2026-000587,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 14 downstream deliveries under REC-2026-000005
-FINLOT-2026-000583,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000006
-CON000270,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000095: input lot RAWLOT-S999-2026-900001 does not exist (original RAWLOT-S049-2026-000052)
-CON000954,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000339: input lot RAWLOT-S999-2026-900002 does not exist (original RAWLOT-S032-2026-000539)
-FINLOT-2026-000266,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 161 (delivery DEL-2026-000680 inflated by 16)
-FINLOT-2026-000658,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 260 (delivery DEL-2026-001654 inflated by 26)
-DEL-2026-000328,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
-DEL-2026-001070,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
-DEL-2026-000331,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-000331 is downstream of REC-2026-000004 but has no recall action; notify customer C0097
-DEL-2026-001588,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-001588 is downstream of REC-2026-000005 but has no recall action; notify customer C0006
+RAWLOT-S165-2026-001045,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 5 downstream deliveries under REC-2026-000001
+RAWLOT-S031-2026-003700,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 8 downstream deliveries under REC-2026-000002
+RAWLOT-S061-2026-007376,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000003
+RAWLOT-S183-2026-008190,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 10 downstream deliveries under REC-2026-000004
+RAWLOT-S438-2026-005456,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 26 downstream deliveries under REC-2026-000005
+RAWLOT-S298-2026-003785,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 7 downstream deliveries under REC-2026-000006
+RAWLOT-S327-2026-002346,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 13 downstream deliveries under REC-2026-000007
+RAWLOT-S140-2026-009023,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 21 downstream deliveries under REC-2026-000008
+RAWLOT-S246-2026-006643,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 14 downstream deliveries under REC-2026-000009
+RAWLOT-S158-2026-008688,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 9 downstream deliveries under REC-2026-000010
+RAWLOT-S012-2026-008065,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 6 downstream deliveries under REC-2026-000011
+RAWLOT-S491-2026-004103,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 11 downstream deliveries under REC-2026-000012
+RAWLOT-S193-2026-002789,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000013
+RAWLOT-S105-2026-003046,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 7 downstream deliveries under REC-2026-000014
+RAWLOT-S190-2026-003625,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000015
+RAWLOT-S171-2026-004910,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000016
+RAWLOT-S476-2026-003555,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 3 downstream deliveries under REC-2026-000017
+RAWLOT-S057-2026-002681,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 3 downstream deliveries under REC-2026-000018
+RAWLOT-S222-2026-008159,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 6 downstream deliveries under REC-2026-000019
+RAWLOT-S410-2026-008368,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000020
+RAWLOT-S158-2026-001087,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000021
+RAWLOT-S210-2026-002849,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 9 downstream deliveries under REC-2026-000022
+RAWLOT-S358-2026-000502,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 6 downstream deliveries under REC-2026-000023
+RAWLOT-S062-2026-001805,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 20 downstream deliveries under REC-2026-000024
+RAWLOT-S379-2026-002836,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 11 downstream deliveries under REC-2026-000025
+RAWLOT-S033-2026-006672,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 12 downstream deliveries under REC-2026-000026
+RAWLOT-S134-2026-006873,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 7 downstream deliveries under REC-2026-000027
+RAWLOT-S484-2026-004275,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 8 downstream deliveries under REC-2026-000028
+RAWLOT-S303-2026-003728,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 7 downstream deliveries under REC-2026-000029
+RAWLOT-S158-2026-006487,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000030
+RAWLOT-S259-2026-005046,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000031
+RAWLOT-S458-2026-006195,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000032
+RAWLOT-S153-2026-003291,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 9 downstream deliveries under REC-2026-000033
+RAWLOT-S171-2026-003554,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 14 downstream deliveries under REC-2026-000034
+RAWLOT-S018-2026-009701,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000035
+RAWLOT-S435-2026-004259,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 13 downstream deliveries under REC-2026-000036
+RAWLOT-S414-2026-006559,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 19 downstream deliveries under REC-2026-000037
+RAWLOT-S371-2026-001855,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 6 downstream deliveries under REC-2026-000038
+RAWLOT-S309-2026-002024,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000039
+RAWLOT-S457-2026-007625,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000040
+RAWLOT-S218-2026-005423,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000041
+RAWLOT-S001-2026-006020,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 12 downstream deliveries under REC-2026-000042
+RAWLOT-S035-2026-002623,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 13 downstream deliveries under REC-2026-000043
+RAWLOT-S396-2026-005210,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 6 downstream deliveries under REC-2026-000044
+RAWLOT-S133-2026-000377,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 8 downstream deliveries under REC-2026-000045
+RAWLOT-S383-2026-001293,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000046
+RAWLOT-S257-2026-006749,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 9 downstream deliveries under REC-2026-000047
+RAWLOT-S190-2026-009665,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000048
+RAWLOT-S348-2026-007176,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 9 downstream deliveries under REC-2026-000049
+RAWLOT-S466-2026-009795,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000050
+FINLOT-2026-005429,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000051
+FINLOT-2026-001881,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000052
+FINLOT-2026-001779,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000053
+FINLOT-2026-004304,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000054
+FINLOT-2026-004346,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000055
+FINLOT-2026-004805,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000056
+FINLOT-2026-004745,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000057
+FINLOT-2026-005566,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 5 downstream deliveries under REC-2026-000058
+FINLOT-2026-005741,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000059
+FINLOT-2026-006730,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000060
+FINLOT-2026-000702,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000061
+FINLOT-2026-000054,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000062
+FINLOT-2026-006839,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000063
+FINLOT-2026-000739,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000064
+FINLOT-2026-003471,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000065
+FINLOT-2026-001161,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000066
+CON002980,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-001012: input lot RAWLOT-S999-2026-900001 does not exist (original RAWLOT-S259-2026-006133)
+CON010032,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-003392: input lot RAWLOT-S999-2026-900002 does not exist (original RAWLOT-S247-2026-006879)
+CON010527,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-003556: input lot RAWLOT-S999-2026-900003 does not exist (original RAWLOT-S030-2026-009143)
+CON012856,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-004348: input lot RAWLOT-S999-2026-900004 does not exist (original RAWLOT-S333-2026-001063)
+CON004813,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-001625: input lot RAWLOT-S999-2026-900005 does not exist (original RAWLOT-S042-2026-007268)
+CON010457,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-003533: input lot RAWLOT-S999-2026-900006 does not exist (original RAWLOT-S443-2026-005660)
+CON001612,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000547: input lot RAWLOT-S999-2026-900007 does not exist (original RAWLOT-S269-2026-008813)
+CON002318,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000787: input lot RAWLOT-S999-2026-900008 does not exist (original RAWLOT-S002-2026-009589)
+CON005441,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-001838: input lot RAWLOT-S999-2026-900009 does not exist (original RAWLOT-S320-2026-007264)
+CON006683,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-002249: input lot RAWLOT-S999-2026-900010 does not exist (original RAWLOT-S427-2026-007144)
+CON001241,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000418: input lot RAWLOT-S999-2026-900011 does not exist (original RAWLOT-S048-2026-007892)
+CON010979,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-003705: input lot RAWLOT-S999-2026-900012 does not exist (original RAWLOT-S472-2026-009470)
+CON014186,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-004802: input lot RAWLOT-S999-2026-900013 does not exist (original RAWLOT-S104-2026-007145)
+CON012984,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-004392: input lot RAWLOT-S999-2026-900014 does not exist (original RAWLOT-S299-2026-000518)
+CON001443,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-000488: input lot RAWLOT-S999-2026-900015 does not exist (original RAWLOT-S057-2026-006451)
+CON004858,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-001640: input lot RAWLOT-S999-2026-900016 does not exist (original RAWLOT-S003-2026-009538)
+CON005226,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-001764: input lot RAWLOT-S999-2026-900017 does not exist (original RAWLOT-S485-2026-007500)
+CON012201,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-004131: input lot RAWLOT-S999-2026-900018 does not exist (original RAWLOT-S370-2026-007193)
+CON010576,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-003572: input lot RAWLOT-S999-2026-900019 does not exist (original RAWLOT-S491-2026-005212)
+CON009022,production_consumption,MISSING_INPUT_LOT,Flag finished lots of WO-2026-003041: input lot RAWLOT-S999-2026-900020 does not exist (original RAWLOT-S148-2026-004618)
+FINLOT-2026-000537,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 725 (delivery DEL-2026-001339 inflated by 72)
+FINLOT-2026-007917,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 556 (delivery DEL-2026-019798 inflated by 55)
+FINLOT-2026-000404,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 217 (delivery DEL-2026-001001 inflated by 21)
+FINLOT-2026-007997,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 532 (delivery DEL-2026-019993 inflated by 53)
+FINLOT-2026-007629,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 60 (delivery DEL-2026-019076 inflated by 6)
+FINLOT-2026-005721,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 62 (delivery DEL-2026-014315 inflated by 6)
+FINLOT-2026-002507,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 559 (delivery DEL-2026-006233 inflated by 55)
+FINLOT-2026-000233,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 128 (delivery DEL-2026-000569 inflated by 12)
+FINLOT-2026-006241,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 287 (delivery DEL-2026-015615 inflated by 28)
+FINLOT-2026-006130,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 742 (delivery DEL-2026-015347 inflated by 74)
+FINLOT-2026-000712,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 75 (delivery DEL-2026-001802 inflated by 7)
+FINLOT-2026-002371,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 213 (delivery DEL-2026-005908 inflated by 21)
+FINLOT-2026-001278,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 279 (delivery DEL-2026-003195 inflated by 27)
+FINLOT-2026-007231,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 61 (delivery DEL-2026-018054 inflated by 6)
+FINLOT-2026-002460,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 311 (delivery DEL-2026-006120 inflated by 31)
+FINLOT-2026-006653,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 216 (delivery DEL-2026-016636 inflated by 21)
+FINLOT-2026-006915,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 620 (delivery DEL-2026-017285 inflated by 62)
+FINLOT-2026-007866,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 93 (delivery DEL-2026-019675 inflated by 9)
+FINLOT-2026-004477,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 133 (delivery DEL-2026-011204 inflated by 13)
+FINLOT-2026-002017,deliveries,DELIVERED_EXCEEDS_PRODUCED,Total delivered exceeds produced_qty 184 (delivery DEL-2026-005026 inflated by 18)
+DEL-2026-007150,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-002480,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-016757,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-018155,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-014990,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-002535,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-001453,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-016561,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-005360,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-017485,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-001481,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-001479,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-000301,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-009610,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-006811,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-007068,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-002249,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-011971,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-013568,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-008724,deliveries,RECALLED_STILL_AVAILABLE,Block this recalled stock: sale_status must be BLOCKED
+DEL-2026-010943,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-010943 is downstream of REC-2026-000011 but has no recall action; notify customer C0541
+DEL-2026-000302,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-000302 is downstream of REC-2026-000038 but has no recall action; notify customer C0674
+DEL-2026-016868,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-016868 is downstream of REC-2026-000045 but has no recall action; notify customer C0388
+DEL-2026-003653,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-003653 is downstream of REC-2026-000010 but has no recall action; notify customer C0119
+DEL-2026-016560,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-016560 is downstream of REC-2026-000008 but has no recall action; notify customer C0771
+DEL-2026-011096,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-011096 is downstream of REC-2026-000034 but has no recall action; notify customer C0857
+DEL-2026-011786,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-011786 is downstream of REC-2026-000043 but has no recall action; notify customer C0242
+DEL-2026-017365,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-017365 is downstream of REC-2026-000029 but has no recall action; notify customer C0358
+DEL-2026-011855,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-011855 is downstream of REC-2026-000057 but has no recall action; notify customer C0576
+DEL-2026-005877,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-005877 is downstream of REC-2026-000009 but has no recall action; notify customer C0503
+DEL-2026-019105,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-019105 is downstream of REC-2026-000037 but has no recall action; notify customer C0287
+DEL-2026-005008,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-005008 is downstream of REC-2026-000044 but has no recall action; notify customer C0881
+DEL-2026-004414,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-004414 is downstream of REC-2026-000002 but has no recall action; notify customer C0921
+DEL-2026-019586,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-019586 is downstream of REC-2026-000048 but has no recall action; notify customer C0430
+DEL-2026-001457,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-001457 is downstream of REC-2026-000037 but has no recall action; notify customer C0349
+DEL-2026-011787,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-011787 is downstream of REC-2026-000043 but has no recall action; notify customer C0279
+DEL-2026-003523,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-003523 is downstream of REC-2026-000033 but has no recall action; notify customer C0933
+DEL-2026-012552,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-012552 is downstream of REC-2026-000009 but has no recall action; notify customer C0194
+DEL-2026-009612,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-009612 is downstream of REC-2026-000026 but has no recall action; notify customer C0115
+DEL-2026-003931,recall_actions,RECALL_MISSED_CUSTOMER,Delivery DEL-2026-003931 is downstream of REC-2026-000019 but has no recall action; notify customer C0019
