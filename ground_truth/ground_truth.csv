@@ -1,0 +1,7 @@
+record_id,table_name,issue_type,expected_decision
+RAWLOT-S027-2026-000273,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000001
+RAWLOT-S028-2026-000463,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000002
+RAWLOT-S048-2026-000400,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 4 downstream deliveries under REC-2026-000003
+RAWLOT-S025-2026-000424,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 12 downstream deliveries under REC-2026-000004
+RAWLOT-S041-2026-000587,material_lots,CONTAMINATED_SOURCE_LOT,Recall all 14 downstream deliveries under REC-2026-000005
+FINLOT-2026-000583,finished_lots,CONTAMINATED_SOURCE_LOT,Recall all 2 downstream deliveries under REC-2026-000006
